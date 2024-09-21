@@ -9,6 +9,7 @@ import java.net.URL;
 
 public class ImageDownloader {
 
+    // Método responsável por baixar a imagem
     public static Bitmap download(String url) throws IOException {
         Bitmap bitmap = null;
 
@@ -16,6 +17,6 @@ public class ImageDownloader {
         bitmap = BitmapFactory.decodeStream(inputStream);
         inputStream.close();
 
-        return  bitmap;
+        return bitmap;
     }
 }
